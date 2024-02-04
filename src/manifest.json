@@ -1,0 +1,26 @@
+{
+	"format_version": 2,
+
+	"header": {
+		"name": "Structure Porter",
+		"description": "Simply shows the import (load mode) and export (save mode) button on structure blocks. By §bvytdev§r",
+		"version": "1.0.0",
+		"uuid": "1db39aa3-94c3-420b-b4d2-a8223cc87a9a",
+		"min_engine_version": [ 1, 19, 60 ]
+	},
+
+	"modules": [
+		{
+			"description": "resource",
+			"type": "resources",
+			"uuid": "d61b7aaf-5119-4791-a739-2ece87227909",
+			"version": [ 1, 0, 0 ]
+		}
+	],
+
+	"metadata": {
+		"authors": [ "VYT" ],
+		"license": "MIT",
+		"url": "https://github.com/vytdev/structure-export"
+	}
+}

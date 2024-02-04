@@ -1,0 +1,90 @@
+{
+	"namespace": "structure_editor",
+
+	// we only need this :)
+	// i used the entire element here because it appears to be hardcoded
+	// i'll leave it here and update it if anything changes
+	"button_panel_wrapper": {
+		"type": "image",
+		"texture": "textures/ui/recipe_back_panel",
+		"layer": 2,
+		"offset": [ 0, 2 ],
+		"controls": [
+			{
+				"panel": {
+					"type": "panel",
+					"size": [ "100% - 6px", "100% - 6px" ],
+					"anchor_from": "center",
+					"anchor_to": "center",
+					"controls": [
+						{
+							"divider": {
+								"type": "panel",
+								"size": [ "4px", "100%" ],
+								"anchor_from": "top_left",
+								"anchor_to": "top_left"
+							}
+						},
+						{
+							"save_panel@structure_editor.save_button_panel": {
+								"layer": 3
+							}
+						},
+						{
+							"save_panel_no_export@structure_editor.save_button_panel_no_export": {
+								"layer": 3,
+								"ignored": true
+							}
+						},
+						{
+							"corner_panel@structure_editor.corner_button_panel": {
+								"layer": 3,
+								"ignored": "(not $file_picking_supported)"
+							}
+						},
+						{
+							"load_panel_no_export@structure_editor.load_button_panel_no_export": {
+								"layer": 3,
+								"ignored": true
+							}
+						},
+						{
+							"load_panel@structure_editor.load_button_panel": {
+								"layer": 3
+							}
+						},
+						{
+							"3d_export_panel@structure_editor.3d_export_button_panel": {
+								"ignored": "(not $3DExport_support)",
+								"layer": 3
+							}
+						},
+						{
+							"data_panel@structure_editor.data_button_panel": {
+								"layer": 3,
+								"ignored": "(not $data_support)"
+							}
+						},
+						{
+							"how_to_play_button@structure_editor.help_button_panel": {
+								"layer": 3
+							}
+						},
+						{
+							"end_divider": {
+								"type": "panel",
+								"size": [ "4px", "100%" ],
+								"anchor_from": "top_right",
+								"anchor_to": "top_right"
+							}
+						}
+					]
+				}
+			}
+		]
+	},
+
+	// fix buttons layout padding
+	"save_button_panel/import_divider": { "size": [ 0, 0 ] },
+	"load_button_panel/export_divider": { "size": [ 0, 0 ] }
+}
